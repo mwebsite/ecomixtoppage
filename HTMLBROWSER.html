@@ -7,24 +7,7 @@
 <title>HTMLBROWSER</title>
 </head>
 <body>
-    <img src="IMG_1556.jpeg" <img src="IMG_1556.jpeg" <img src="IMG_1556.jpeg"
-    <h1>URLを入力</h1>
-    <input type="text" id="urlInput" placeholder="https://example.com" style="width: 300px; padding: 5px;">
-    <script>
-        // URL入力フォームのイベントリスナー
-        document.getElementById("urlInput").addEventListener("keypress", function(event) {
-            if (event.key === "Enter") { // Enterキーを確認
-                const url = event.target.value.trim(); // 入力値を取得
-                if (url) {
-                    // 入力値が有効な場合、そのURLを開く
-                    window.open(url, "_blank"); // 新しいタブで開く
-                } else {
-                    alert("HTMLBROWSER Can`t Found This Server!");
-                }
-            }
-        });
-    </script>
-    <h1>Google検索</h1>
+    <h1>Google Search</h1>
     <form action="https://www.google.com/search" method="get" target="_blank">
         <!-- Googleに渡す検索キーワード -->
         <input type="text" name="q" placeholder="検索ワードを入力" style="width: 300px; padding: 5px;">
